@@ -8,19 +8,20 @@
  */
 class Solution {
 public:
-    
     int getDecimalValue(ListNode* head) {
-        
+        if(!head)
+            return 0;
         if(!head->next)
             return head->val;
         
-        int solution = 0;
-        while(head)
+        int res = 0;
+        ListNode* ptr = head;
+        
+        while(ptr)
         {
-            solution = solution<<1;
-            solution += head->val;
-            head=head->next;
-        }    
-        return solution;
+            res = (res << 1) + ptr->val;
+            ptr = ptr->next;   
+        }
+        return res;
     }
 };
