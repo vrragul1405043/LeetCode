@@ -15,6 +15,7 @@ public:
             sort(s.begin(),s.end());
             m[s].push_back(strs[i]);
         }
+        int map_size = m.size();
         
         for(auto it = m.begin(); it!=m.end();++it)
             res.push_back(it->second);
