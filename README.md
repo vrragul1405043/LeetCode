@@ -1,2 +1,2 @@
 # LeetCode
-My journey to a Leetcoder
+Solved LeetCode problems (C++)
